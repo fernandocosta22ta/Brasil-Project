@@ -14,6 +14,38 @@
 body {
     font-family: "Roboto", sans-serif;
     background-color: #F0FFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+}
+
+header {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    background-color: #CFF2F2; 
+    padding:30px 0;
+    text-align: center; 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
 }
 
 .letras {
@@ -73,4 +105,29 @@ body {
 .highlight {
     color: #4169E1;
     font-weight: bold;
+}
+
+.letras {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+.content {
+    text-align: center; 
+}
+
+a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+@media (max-width: 768px) {
+    .content {
+        font-size: 1em; 
+    }
+
+    .navigation img {
+        width: 25px; 
+    }
 }
